@@ -135,14 +135,17 @@ public class TicTacToe
         // Determine if there was a winner
         if(!this.checkWin()) {
             System.out.println("Game ends in a tie!");
+            window.displayWinMessage("Game ends in a tie!");
         } else {
             this.markWinningSquares();
             if (this.turn%2 == 0) {
                 this.winner = O_MARKER;
                 System.out.println("O Wins!");
+                window.displayWinMessage("O Wins!");
             } else {
                 this.winner = X_MARKER;
                 System.out.println("X Wins!");
+                window.displayWinMessage("X Wins!");
             }
         }
     }
