@@ -47,6 +47,7 @@ public class TicTacToeViewer extends JFrame {
                 grid[i][j].draw(g, (i + 1) * X_OFFSET, (j + 1) * Y_OFFSET + TITLE_BAR_HEIGHT,
                         this, XIcon, OIcon);
 
+                // Numbers
                 g.setColor(Color.red);
                 g.drawString(String.valueOf(i), (i + 1) * X_OFFSET, (j + 1) * Y_OFFSET + TITLE_BAR_HEIGHT);
             }
