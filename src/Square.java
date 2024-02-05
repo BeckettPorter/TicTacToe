@@ -63,17 +63,20 @@ public class Square {
     public void draw(Graphics g, int x_offset, int y_offset, TicTacToeViewer instigator,
     Image xIcon, Image oIcon)
     {
+        // Draw squares
         g.setColor(Color.black);
         g.drawRect(x_offset, y_offset, SQUARE_SIZE, SQUARE_SIZE);
 
 
+        // If the square is a winning square, paint it green
         if (isWinningSquare)
         {
             g.setColor(Color.green);
             g.fillRect(x_offset, y_offset, SQUARE_SIZE, SQUARE_SIZE);
         }
 
-        // TODO: Add draw x or o part
+
+        // Switch case that sets the correct image
         switch (marker)
         {
             case TicTacToe.X_MARKER:
@@ -99,10 +102,6 @@ public class Square {
                 break;
         }
     }
-
-
-
-
 
     /**
      * @return the marker for the square

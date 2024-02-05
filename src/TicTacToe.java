@@ -60,8 +60,6 @@ public class TicTacToe
         this.winDirection = -1;
 
         // Initialize frontEnd
-
-
         window = new TicTacToeViewer(board, this);
     }
 
